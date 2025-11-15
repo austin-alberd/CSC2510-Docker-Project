@@ -16,5 +16,6 @@ FROM alpine:3.20
     COPY --from=builder /app/server .
     # expose port 8080 
     EXPOSE 8080
+    EXPOSE 4532
     # run our server using CMD and ./server
     CMD [ "./server" ]

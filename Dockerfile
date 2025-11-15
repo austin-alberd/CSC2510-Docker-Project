@@ -11,7 +11,7 @@ RUN go build -o server .
 FROM alpine:3.20
 # TODO: 
     # set WORKDIR to the /app directory
-    WORKDDIR /app
+    WORKDIR /app
     # copy our current directory to /app/server (hint - use --from=builder)
     COPY --from=builder /app/server .
     # expose port 8080 

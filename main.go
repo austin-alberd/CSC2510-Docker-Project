@@ -34,7 +34,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-    _, err = db.Exec(`CREATE TABLE IF NOT EXISTS users (
+	_, err = db.Exec(`CREATE TABLE IF NOT EXISTS users (
         id SERIAL PRIMARY KEY,
         name VARCHAR(100)
         )`)

@@ -9,7 +9,6 @@ RUN go build -o server .
 
 # Step 2: Run
 FROM alpine:3.20
-# TODO: 
     # set WORKDIR to the /app directory
     WORKDIR /app
     # copy our current directory to /app/server (hint - use --from=builder)
